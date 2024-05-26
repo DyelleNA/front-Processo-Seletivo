@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo Seletivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img src="images/logo.png" alt="Logo da Empresa" class="logo">
+        </div>
+        <div class="content">
+            <h1 class="title">Processo Seletivo</h1>
+            <h2 class="subtitle">Inscrição para novos membros</h2>
+            <p class="instructions">Preencha seus dados logo abaixo</p>
+            <div class="form-container">
+                <select class="form-input" id="vaga">
+                    <option value="">Escolha a vaga de seu interesse</option>
+                    <option value="frontend">Desenvolvedor Front-end</option>
+                    <option value="backend">Desenvolvedor Back-end</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="design">Design</option>
+                </select>
+                <input type="text" class="form-input" id="nome" placeholder="Digite seu nome completo">
+                <input type="email" class="form-input" id="email" placeholder="Digite seu endereço de e-mail">
+                <input type="text" class="form-input" id="curso" placeholder="Digite seu curso">
+                <input type="text" class="form-input" id="periodo" placeholder="Digite seu período">
+                <button class="form-button cadastrar" id="cadastrar">Cadastrar</button>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="images/map-icon.png" alt="Ícone de mapa" class="map-icon">
+            <span>Av. Prof. Antônio Campos - Pres. Costa e Silva, Mossoró - RN, 59610-210</span>
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup">
+        <div class="popup">
+            <p>Confirme seus dados</p>
+            <button class="popup-button" id="confirmar">CONFIRMA</button>
+            <button class="popup-button voltar" id="voltar">
+                <img src="images/back-icon.png" alt="Ícone de voltar">
+                Voltar
+            </button>
+        </div>
+    </div>
+
+    <div class="confirmation-container" id="confirmation">
+        <div class="header">
+            <img src="images/logo.png" alt="Logo da Empresa" class="logo">
+        </div>
+        <div class="content">
+            <h1 class="title">Processo Seletivo</h1>
+            <h2 class="subtitle">Inscrição para novos membros</h2>
+            <div class="confirmation-message">
+                <h2 class="title">Tudo Pronto!</h2>
+                <p>Você completou as etapas do processo, em breve entraremos em contato.</p>
+                <img src="images/success.png" alt="Imagem de sucesso" class="success-image">
+            </div>
+        </div>
+        <div class="footer">
+            <img src="images/map-icon.png" alt="Ícone de mapa" class="map-icon">
+            <span>Av. Prof. Antônio Campos - Pres. Costa e Silva, Mossoró - RN, 59610-210</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
